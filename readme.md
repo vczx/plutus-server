@@ -1,11 +1,13 @@
 # Starting Plutus
 
 ## Run the backend fat jar directly
-* I have already composed a fat jar and check into the branch fat jar. Download the jar
-* Go to jar location and Run with cmd : 
+* run the following cmd in root folder
 ```$xslt
+    mvn clean package 
+    cd target
     java -Dspring.profiles.active=h2 -jar plutus-0.0.1-SNAPSHOT.jar
 ```
+* App is up and running, preload with data
 * Please ensure port 8080 is free. 
 * open to explore the Restful service exposed
 ```$xslt
